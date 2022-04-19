@@ -124,6 +124,7 @@ namespace _3_лаба_оп
 
             Console.WriteLine(tree.Equals(tree1) );
             Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
