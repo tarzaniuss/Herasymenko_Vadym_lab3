@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_3_лаба_оп</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="task2\**" />
+    <EmbeddedResource Remove="task2\**" />
+    <None Remove="task2\**" />
+  </ItemGroup>
+
+</Project>
