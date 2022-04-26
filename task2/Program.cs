@@ -19,8 +19,8 @@ namespace task2
 			};
 
             Console.WriteLine($"The price of the whole autopark is {Autopark.CalculateCarsCost(cars)}");
-			Autopark.SortByFuelConsuption(cars);
-
+			//Autopark.SortByFuelConsuption(cars);
+			cars.Sort();
 			Console.WriteLine();
             foreach (var car in cars)
             {

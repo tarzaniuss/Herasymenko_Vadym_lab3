@@ -4,7 +4,7 @@ using System.Text;
 
 namespace task2
 {
-	class Car
+	class Car:IComparable
 	{
 		public Manufacturer Manufacturer { set; get; }
 		public Type Type { set; get; }
@@ -37,7 +37,31 @@ namespace task2
 			return carInfo;
 		}
 
-	}
+        public int CompareTo(object obj)
+        {
+			
+			if(obj is Car car)
+            {
+				if (this.FuelConsumption < car.FuelConsumption)
+				{
+					return -1;
+				}
+				else if(this.FuelConsumption > car.FuelConsumption)
+                {
+					return 1;
+                }
+                else
+                {
+					return 0;
+                }
+            }
+            else
+            {
+				throw new Exception("Invalid data");
+			}
+
+        }
+    }
 	enum Transmission
 	{
 		Automatic,

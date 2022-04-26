@@ -32,13 +32,14 @@ namespace task2
 			return carSelection;
 		}
 
-		public static void SortByFuelConsuption(List<Car> cars)
-		{
-			cars.Sort(delegate(Car car1, Car car2)
-			{
-				return car1.FuelConsumption.CompareTo(car2.FuelConsumption);
-			});
+		//public static void SortByFuelConsuption(List<Car> cars)
+		//{
+		//	cars.Sort(delegate(Car car1, Car car2)
+		//	{
+		//		return car1.FuelConsumption.CompareTo(car2.FuelConsumption);
+		//	});
 			
-		}
-	}
+		//}
+
+    }
 }
